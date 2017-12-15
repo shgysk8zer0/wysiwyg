@@ -6,4 +6,5 @@
 @import url("./core-css/element.css");
 @import url("./core-css/class-rules.css");
 @import url("./core-css/animations.css");
+@import url("./animate/animate.css");
 @import url("./core-css/fonts.css");
