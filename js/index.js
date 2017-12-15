@@ -5,6 +5,7 @@ import deprefix from './std-js/deprefixer.js';
 import webShareApi from './std-js/webShareApi.js';
 import * as shares from './share-config.js';
 import kbdShortcuts from './std-js/kbd_shortcuts.js';
+import wysiwyg from './std-js/wysiwyg.js';
 
 webShareApi(...Object.values(shares));
 deprefix();
@@ -23,6 +24,7 @@ async function readyHandler() {
 		const parser = new DOMParser();
 		const html = await resp.text();
 		const doc = parser.parseFromString(html, 'text/html');
+		wysiwyg(doc.body.firstElementChild);
 		const editor = document.querySelector('[contenteditable="true"]');
 		editor.setAttribute('contextmenu', doc.body.firstElementChild.id);
 		document.body.appendChild(doc.body.firstElementChild);
