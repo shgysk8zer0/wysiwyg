@@ -12,6 +12,12 @@ export async function readyHandler() {
 		$('[data-share]').attr({hidden: false});
 	}
 
+	$doc.click(event => {
+		if (! event.target.matches('details[open], details[open] *')) {
+			$('details[open].js-auto-close').close();
+		}
+	});
+
 	if (HTMLElement.prototype.hasOwnProperty('contextMenu')) {
 		const resp = await fetch(new URL('./wysiwyg.html', location.href));
 		const parser = new DOMParser();
