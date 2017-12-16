@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="no-js scroll-smooth">
+<html lang="en" dir="ltr" class="no-js scroll-smooth" itemtype="http://schema.org/WebApplication" itemscope="">
 	<head>
 		<meta charset="UTF-8" />
-		<title>WYSIWYG Editor</title>
+		<meta iteprop="applicationCategory" content="Office" />
+		<title itemprop="name">WYSIWYG Editor</title>
 		<script type="module" src="js/index.js" async=""></script>
 		<link rel="stylesheet" href="css/index.css" media="screen" />
 	</head>
 	<body class="border-box background-primary grid">
-		<header></header>
+		<header>
+			<details class="js-auto-close" hidden="">
+				<!-- Leaving this in as an example menu item -->
+				<summary><button>Click Me!</button></summary>
+				<div>
+					jdsg
+				</div>
+			</details>
+		</header>
 		<div contenteditable="true"></div>
 		<footer>
 			<a href="https://github.com/shgysk8zer0" target="_blank" rel="noopener external">
