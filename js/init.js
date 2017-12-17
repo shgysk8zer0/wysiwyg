@@ -18,6 +18,8 @@ export async function readyHandler() {
 		}
 	});
 
+	$('.toolbar').each(wysiwyg);
+
 	if (HTMLElement.prototype.hasOwnProperty('contextMenu')) {
 		const resp = await fetch(new URL('./wysiwyg.html', location.href));
 		const parser = new DOMParser();
