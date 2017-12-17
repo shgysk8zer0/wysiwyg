@@ -45,13 +45,16 @@ document-print,img/adwaita-icons/actions/document-print.svg
 document-edit,img/adwaita-icons/actions/document-edit.svg
 document-recents,img/adwaita-icons/actions/document-open-recent.svg
 edit-clear,img/adwaita-icons/actions/edit-clear.svg
+edit-clear-all,img/adwaita-icons/actions/edit-clear-all.svg
 edit-paste,img/adwaita-icons/actions/edit-paste.svg
 edit-copy,img/adwaita-icons/actions/edit-copy.svg
 edit-cut,img/adwaita-icons/actions/edit-cut.svg
 edit-undo,img/adwaita-icons/actions/edit-undo.svg
 edit-redo,img/adwaita-icons/actions/edit-redo.svg
+edit-select-all,img/adwaita-icons/actions/edit-select-all.svg
 insert-image,img/adwaita-icons/actions/insert-image.svg
 insert-link,img/adwaita-icons/actions/insert-link.svg
 spell-check,img/adwaita-icons/actions/tools-check-spelling.svg
-color-select,img,adwaita-icons/actions/color-select.svg
+color-select,img/adwaita-icons/actions/color-select.svg
 download,img/adwaita-icons/places/folder-download.svg
+view-fullscreen,img/adwaita-icons/actions/view-fullscreen.svg
