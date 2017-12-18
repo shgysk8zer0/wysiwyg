@@ -1,0 +1,5 @@
+exclude:
+- "imgs/"
+- "css/"
+- "js/"
+- "fonts/"
