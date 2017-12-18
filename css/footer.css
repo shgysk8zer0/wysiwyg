@@ -1,3 +1,4 @@
 body > footer {
 	grid-area: footer;
+	align-self: end;
 }

@@ -1,6 +1,7 @@
 body {
 	grid-row-gap: 2rem;
 	grid-template-columns: 5fr 90fr 5fr;
+	grid-template-rows: auto minmax(80vh, auto) auto;
 	grid-template-areas: "header header header"
 		". editor ."
 		"footer footer footer";

@@ -1,3 +1,25 @@
 body > header {
 	grid-area: header;
+	align-self: start;
+	max-width: 100vw;
+	overflow-x: auto;
+}
+
+.toolbar {
+	background: gainsboro;
+	justify-content: center;
+}
+
+.toolbar:not(:hover) {
+	opacity: 0.8;
+}
+
+.toolbar button, .toolbar[role="button"] {
+	border: none;
+	background-image: linear-gradient(#ddd,#ccc,#ddd);
+	box-sizing: border-box;
+}
+
+.toolbar button:hover, .toolbar [role="button"]:hover {
+	border: 1px solid #bbb;
 }
