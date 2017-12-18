@@ -1,5 +1,5 @@
 exclude:
-- "imgs/"
-- "css/"
-- "js/"
-- "fonts/"
+- "imgs/*.md"
+- "css/*.md"
+- "js/*.md"
+- "fonts/*.md"
