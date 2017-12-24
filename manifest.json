@@ -2,6 +2,7 @@
     "name": "HTML5 WYSIWYG",
     "lang": "en_US",
     "description": "Write cusom HTML using HTML and JavaScript",
+    "start_url": "/wysiwyg/",
     "developer": {
       "name": "Chris Zuber",
       "url": "https://shgysk8zer0.github.io"
