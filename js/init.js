@@ -55,16 +55,5 @@ export async function readyHandler() {
 		}
 	});
 
-	$('.toolbar').each(wysiwyg);
-
-	if (HTMLElement.prototype.hasOwnProperty('contextMenu')) {
-		const resp = await fetch(new URL('wysiwyg.html', document.baseURI));
-		const parser = new DOMParser();
-		const html = await resp.text();
-		const doc = parser.parseFromString(html, 'text/html');
-		wysiwyg(doc.body.firstElementChild);
-		const editor = document.querySelector('[contenteditable="true"]');
-		editor.setAttribute('contextmenu', doc.body.firstElementChild.id);
-		document.body.appendChild(doc.body.firstElementChild);
-	}
+	$('.toolbar, #wysiwyg-menu').each(wysiwyg);
 }

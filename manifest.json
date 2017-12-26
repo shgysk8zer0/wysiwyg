@@ -1,32 +1,18 @@
+---
+layout: null
+---
 {
-    "name": "HTML5 WYSIWYG",
+    "name": "{{ site.title }}",
     "lang": "en_US",
-    "description": "Write cusom HTML using HTML and JavaScript",
-    "start_url": "/wysiwyg/",
+    "description": "{{ site.title }}",
+    "start_url": "{{ site.url }}",
     "developer": {
-      "name": "Chris Zuber",
+      "name": "{{ site.author }}",
       "url": "https://shgysk8zer0.github.io"
     },
-    "icons": [
-        {
-            "src": "/wysiwyg/img/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
-        },
-        {
-            "src": "/wysiwyg/img/android-chrome-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ],
-    "screenshots": [
-      {
-        "src": "https://i.imgur.com/7HKDd5c.png",
-        "type": "image/png",
-        "sizes": "1024x820"
-      }
-    ],
-    "theme_color": "#ffffff",
+    "icons": {{ site.appicons | jsonify }},
+    "screenshots": {{ site.screenshots | jsonify }},
+    "theme_color": "{{ site.theme-color }}",
     "background_color": "#ffffff",
     "display": "standalone"
 }

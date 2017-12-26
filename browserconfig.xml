@@ -1,12 +1,15 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="/wysiwyg//img/mstile-70x70.png"/>
-            <square150x150logo src="/wysiwyg/img/mstile-150x150.png"/>
-            <square310x310logo src="/wysiwyg//img/mstile-310x310.png"/>
-            <wide310x150logo src="/wysiwyg/img/mstile-310x150.png"/>
-            <TileColor>#00aba9</TileColor>
+            <square70x70logo src="{{ './img/mstile-70x70.png' | absolute_url }}"/>
+            <square150x150logo src="{{ './img/mstile-150x150.png' | absolute_url }}"/>
+            <square310x310logo src="{{ './img/mstile-310x310.png' | absolute_url }}"/>
+            <wide310x150logo src="{{ './img/mstile-310x150.png' | absolute_url }}"/>
+            <TileColor>{{ site.theme-color }}</TileColor>
         </tile>
     </msapplication>
 </browserconfig>

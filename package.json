@@ -25,12 +25,10 @@
     "npm": ">=3.5"
   },
   "scripts": {
-    "build:all": "npm run build:icons && npm run build:css && npm run build:js",
+    "build": "npm run build:icons && npm run build:css && npm run build:js",
     "build:css": "postcss css/index.css -o css/index.min.css",
     "build:js": "rollup -c",
     "build:icons": "svg-sprite-generate -c img/icons.csv -o img/icons.svg",
-    "lint": "npm run lint:all",
-    "lint:all": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint -c .eslintignore .",
     "lint:css": "stylelint 'css/**/*.css'",
     "watch:css": "postcss css/index.css -o css/index.min.css -w",
@@ -39,9 +37,9 @@
     "git:submodules": "git submodule update --init --recursive",
     "update-remote": "git submodule update --remote --init --recursive && npm update --save",
     "update-packages": "npm run git:submodules && npm run git:fetch && npm run build:all",
-    "start": "python -m SimpleHTTPServer 8000",
-    "test": "npm run lint",
-    "postinstall": "npm run git:fetch && npm run git:submodules && npm run build:all"
+    "start": "jekyll serve",
+    "test": "npm run lint:js && npm run lint:css",
+    "postinstall": "npm run git:submodules && npm run build"
   },
   "devDependencies": {
     "eslint": "^3.10.0",

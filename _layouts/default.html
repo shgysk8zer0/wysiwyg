@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js scroll-smooth" data-service-worker="./service-worker.js" itemtype="http://schema.org/WebApplication" itemscope="">
+	{% include head.html %}
+	<body class="border-box background-primary grid">
+		<header>
+			{% include toolbar.html %}
+		</header>
+		<div class="card shadow-dark" contenteditable="true" contextmenu="wysiwyg-menu">{{ content }}</div>
+		{% include footer.html %}
+		{% include wysiwyg.html %}
+	</body>
+</html>
