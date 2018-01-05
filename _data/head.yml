@@ -43,7 +43,7 @@ preload:
     as: image
     type: image/svg+xml
 icons:
-  - href: ./img/favicon.svg
+  - href: ./img/wysiwyg.svg
     type: image/svg+xml
     sizes: any
   - href: ./img/icon-32.png
