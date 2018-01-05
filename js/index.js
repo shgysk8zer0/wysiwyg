@@ -1,11 +1,10 @@
 import './std-js/shims.js';
-import {$} from './std-js/functions.js';
-import deprefix from './std-js/deprefixer.js';
+import './std-js/deprefixer.js';
+import {ready} from './std-js/functions.js';
 import webShareApi from './std-js/webShareApi.js';
 import * as shares from './share-config.js';
 import * as Init from './init.js';
 
-webShareApi(...Object.values(shares));
-deprefix();
+ready.then(Init.readyHandler);
 
-$(self).ready(Init.readyHandler, {once: true});
+webShareApi(...Object.values(shares));
