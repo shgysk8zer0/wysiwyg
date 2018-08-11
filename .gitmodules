@@ -19,3 +19,6 @@
 [submodule "css/animate"]
 	path = css/animate
 	url = https://github.com/daneden/animate.css.git
+[submodule "img/octicons"]
+	path = img/octicons
+	url = https://github.com/shgysk8zer0/octicons-svg.git
